@@ -28,12 +28,12 @@ div {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 .profile {
-    background-color: #050535;
+    background-color: black;
     color: white;
     padding: 20px;
     width: 35%;
     text-align: center;
-    border: 5px solid #041d3f;
+    border: 5px solid #041a37;
 }
 .name {
     font-size: 35px;

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="./resume.css">
+</head>
+
+<body>
+
+    <div class="startup">
+        <div class="wrapper">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="openButton" id="openButton">
+            <h1>Build Your Resume</h1>
+            <button class="startButton" id="startButton">Let's Start</button>
+        </div>
+    </div>
+    <div class="container" id="container">
+        <h1>Dynamic Resume Builder</h1>
+
+        <form id="resume-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="obj">Objective:</label>
+            <input type="text" id="obj" name="obj" required>
+
+            <!-- Personal Information -->
+            <h2>Personal Information</h2>
+
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="profilePicture">Profile Picture</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*" required>
+
+            <!-- Languages Section -->
+            <h2>Languages</h2>
+            <div id="language-section">
+                <div class="language-entry">
+                    <label for="language">Language:</label>
+                    <input type="text" class="language" name="language" required>
+                </div>
+            </div>
+            <button type="button" onclick="addLanguageField()">Add Another Language</button>
+
+            <!-- Education Section -->
+            <h2>Education</h2>
+            <div id="education-section">
+                <div class="education-entry">
+                    <label for="education">Degree and School:</label>
+                    <input type="text" class="education" name="education" required>
+                </div>
+            </div>
+            <button type="button" onclick="addEducationField()">Add Another Education</button>
+
+            <h2>Certification</h2>
+            <div id="certification-section">
+                <div class="certification-entry">
+                    <label for="certification">Certificate and Institute:</label>
+                    <input type="text" class="certification" name="certification">
+                </div>
+            </div>
+            <button type="button" onclick="addCertificationField()">Add Another Certification</button>
+
+            <!-- Work Experience Section -->
+            <h2>Work Experience</h2>
+            <div id="work-section">
+                <div class="work-entry">
+                    <label for="work">Position and Company:</label>
+                    <input type="text" class="work" name="work" required>
+                </div>
+            </div>
+            <button type="button" onclick="addWorkField()">Add Another Position</button>
+
+            <!-- Skills Section -->
+            <h2>Skills</h2>
+            <div id="skills-section">
+                <div class="skills-entry">
+                    <label for="skills">Skill:</label>
+                    <input type="text" class="skill" name="skills" required>
+                </div>
+            </div>
+            <button type="button" onclick="addSkillField()">Add Another Skill</button>
+
+            <!-- Reference Section -->
+            <h2>Reference</h2>
+            <div>
+                <label for="reference">Reference:</label>
+                <input type="text" id="reference" name="reference" required>
+            </div>
+
+            <button type="submit">Generate Resume</button>
+        </form>
+
+        <!-- Generated Resume -->
+        <section id="resume" style="display: none;">
+            <div id="generated-resume" class="resume-content">
+                <!-- Dynamic resume content will go here -->
+                <p>Your resume content...</p>
+            </div>
+
+            <button id="download-pdf">Download as PDF</button>
+
+        </section>
+
+    </div>
+</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
+        <script src="./resume.js"></script>
+
+</html>

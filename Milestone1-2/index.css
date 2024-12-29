@@ -1,0 +1,343 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start; /* Align content to the top */
+    flex-direction: column; /* Stack header and resume vertically */
+    min-height: 100vh;
+    color: #333;
+    align-items: center; /* Center the content horizontally */
+}
+
+.heading {
+    font-family: 'Gill Sans', sans-serif;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #174684;
+    padding-top: 10px; /* Add top padding to give some space from the top */
+    width: 100%;
+}
+
+.subheading {
+    font-size: 1.2rem;
+    color: #11998e;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Resume Container */
+.resume {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure proper alignment for larger screens */
+    background-color: #ffffff;
+    max-width: 1000px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    margin-top: 20px; /* Add margin to separate it from the heading */
+    box-sizing: border-box; /* Include padding and border in width/height calculation */
+}
+
+/* Profile Section */
+.profile {
+    background-color: #041a37;
+    color: white;
+    width: 30%; /* Take 30% space of the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.dp {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 4px solid #ffffff;
+}
+
+h2.name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Information Section */
+.information {
+    width: 70%; /* Take 70% space of the container */
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+.information h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #174684;
+    border-bottom: 2px solid #66c4a8;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.information ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.information ul li {
+    margin-bottom: 10px;
+    word-wrap: break-word;
+}
+
+/* Links */
+a {
+    color: #66c4a8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #11998e;
+}
+
+/* Button */
+button {
+    background-color: #66c4a8;
+    border: none;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #11998e;
+}
+
+/* Section-Specific Styling */
+
+/* Contact Information */
+#contactInfo h3 {
+    font-size: 1.3rem;
+    color: #66c4a8;
+    margin-bottom: 10px;
+}
+
+#contactInfo ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Languages */
+#lang h3 {
+    font-size: 1.3rem;
+    color: #66c4a8;
+    margin-bottom: 10px;
+}
+
+#lang ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Education */
+#edu ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+#edu ul li strong {
+    color: #174684;
+}
+
+/* Certifications */
+#certifications ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+#certifications ul li strong {
+    color: #174684;
+}
+
+/* Skills */
+#skills ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Soft Skills */
+#softSkills ul li {
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+/* Work Experience */
+#exper ul li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+#exper ul li strong {
+    color: #174684;
+}
+
+/* Reference */
+#ref p {
+    margin-top: 10px;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+/* Additional Section Styling */
+section {
+    margin-bottom: 20px;
+}
+
+section h2,
+section h3 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+/* Social Accounts Section - Updated Styling (No Flex) */
+#accounts h3 {
+    font-size: 1.3rem;
+    color: #66c4a8; /* Green color for the heading */
+    margin-bottom: 10px;
+}
+
+#accounts ul {
+    padding: 0;
+    list-style: none;
+}
+
+#accounts ul li {
+    font-size: 1.2rem; /* Increase size of social account links */
+    display: inline-block;
+    margin-bottom: 10px; /* Add space between lines of social account items */
+    margin-right: 15px; /* Add space between icons */
+}
+
+#accounts ul li a {
+    color: inherit; /* Inherit the color of the parent element */
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#accounts ul li a:hover {
+    color: #11998e; /* Hover effect with green color */
+    transform: scale(1.2); /* Slightly increase the size of the icon */
+}
+
+/* Responsive Design */
+
+/* Medium Screens (Tablets, 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        flex-direction: row; /* Keep sections side-by-side on tablets */
+    }
+
+    .profile {
+        width: 35%; /* Profile section takes up 35% on tablet screens */
+        padding-right: 15px; /* Add padding to prevent overlap */
+    }
+
+    .information {
+        width: 65%; /* Information section takes up 65% on tablet screens */
+        padding: 20px;
+    }
+
+    .information h2 {
+        font-size: 1.3rem; /* Slightly smaller heading */
+    }
+
+    .heading {
+        font-size: 2rem; /* Smaller heading for better fit */
+    }
+
+    .profile .dp {
+        width: 100px; /* Smaller profile picture */
+        height: 100px;
+    }
+
+    .information ul li {
+        font-size: 0.9rem; /* Smaller font for better readability */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+}
+
+/* Small Screens (Mobiles, 480px) */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume {
+        flex-direction: column; /* Stack sections vertically on mobile */
+        align-items: stretch;
+    }
+
+    .profile {
+        width: 100%; /* Profile section takes full width */
+        padding: 15px;
+    }
+
+    .information {
+        width: 100%; /* Information section also takes full width */
+        padding: 15px;
+    }
+
+    .information h2 {
+        font-size: 1.1rem; /* Adjust heading font size */
+    }
+
+    .heading {
+        font-size: 1.5rem; /* Smaller heading on mobile */
+    }
+
+    .profile .dp {
+        width: 80px; /* Further reduce profile picture size */
+        height: 80px;
+    }
+
+    .information ul li {
+        font-size: 0.8rem; /* Adjust text size for better fit */
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    #accounts ul {
+        text-align: center; /* Center the social icons on small screens */
+    }
+
+    #accounts ul li {
+        font-size: 1.1rem; /* Reduce icon size for mobile */
+        margin-right: 10px; /* Slightly reduce the space between icons */
+    }
+}

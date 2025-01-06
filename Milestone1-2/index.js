@@ -1,8 +1,6 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-const skillButton = document.getElementById('toggleSkills');
-const skills = document.getElementById('skills');
-skillButton.addEventListener('click', () => {
+var skillButton = document.getElementById('toggleSkills');
+var skills = document.getElementById('skills');
+skillButton.addEventListener('click', function () {
     if (skills.style.display === 'none') {
         skills.style.display = 'block';
     }

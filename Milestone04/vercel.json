@@ -1,5 +1,5 @@
 {
-    "rewrites": [
-        { "source": "/:path*", "destination": "/" }
+    "routes": [
+      { "src": "/main", "dest": "/main.html" }
     ]
-}
+  }
